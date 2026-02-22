@@ -628,10 +628,16 @@ ul {
    Contact Form
    =========================== */
 
+.contact-section {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-xl);
+  align-items: start;
 }
 
 .form-group {
@@ -689,6 +695,10 @@ ul {
   padding: var(--space-lg);
   border-left: 3px solid var(--color-gold);
   margin-bottom: var(--space-lg);
+}
+
+.contact-info-card:last-child {
+  margin-bottom: 0;
 }
 
 .contact-info-card h3 {
