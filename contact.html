@@ -40,52 +40,45 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact Form -->
   <section class="section contact-section">
     <div class="container">
-      <div class="contact-grid">
+      <div class="contact-form-wrapper">
+        <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:var(--space-lg);">Send Us a Message</h2>
+        <div id="hubspot-form"></div>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            region: "na1",
+            portalId: "6575394",
+            formId: "1b147a21-0ca6-42f4-bfff-64448511dc9f",
+            target: "#hubspot-form"
+          });
+        </script>
+      </div>
+    </div>
+  </section>
 
-        <!-- HubSpot Form -->
-        <div>
-          <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:var(--space-lg);">Send Us a Message</h2>
-          <div id="hubspot-form"></div>
-          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-          <script>
-            hbspt.forms.create({
-              region: "na1",
-              portalId: "6575394",
-              formId: "1b147a21-0ca6-42f4-bfff-64448511dc9f",
-              target: "#hubspot-form"
-            });
-          </script>
+  <!-- Contact Info Bar -->
+  <section class="contact-bar">
+    <div class="container">
+      <div class="contact-bar-grid">
+        <div class="contact-bar-item">
+          <h3>Email</h3>
+          <p>info@landagent.com</p>
         </div>
-
-        <!-- Contact Info -->
-        <div>
-          <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:var(--space-lg);">Contact Info</h2>
-
-          <div class="contact-info-card">
-            <h3>Email</h3>
-            <p>info@landagent.com</p>
-          </div>
-
-          <div class="contact-info-card">
-            <h3>Phone</h3>
-            <p>(603) 999-5555</p>
-          </div>
-
-          <div class="contact-info-card">
-            <h3>Location</h3>
-            <p>Boston, MA</p>
-          </div>
-
-          <div class="contact-info-card">
-            <h3>Hours</h3>
-            <p>Monday — Friday</p>
-            <p>9:00 AM — 5:00 PM EST</p>
-          </div>
+        <div class="contact-bar-item">
+          <h3>Phone</h3>
+          <p>(603) 999-5555</p>
         </div>
-
+        <div class="contact-bar-item">
+          <h3>Location</h3>
+          <p>Boston, MA</p>
+        </div>
+        <div class="contact-bar-item">
+          <h3>Hours</h3>
+          <p>Mon — Fri, 9AM — 5PM EST</p>
+        </div>
       </div>
     </div>
   </section>

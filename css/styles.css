@@ -630,14 +630,33 @@ ul {
 
 .contact-section {
   padding-top: var(--space-xl);
-  padding-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
 }
 
-.contact-grid {
+.contact-form-wrapper {
+  max-width: 700px;
+}
+
+.contact-bar {
+  background: var(--color-light-gold);
+  padding: var(--space-xl) 0;
+}
+
+.contact-bar-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-xl);
-  align-items: start;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+.contact-bar-item h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.contact-bar-item p {
+  color: var(--color-gray);
+  font-size: 0.95rem;
 }
 
 .form-group {
@@ -691,25 +710,6 @@ ul {
   display: block;
 }
 
-.contact-info-card {
-  padding: var(--space-lg);
-  border-left: 3px solid var(--color-gold);
-  margin-bottom: var(--space-lg);
-}
-
-.contact-info-card:last-child {
-  margin-bottom: 0;
-}
-
-.contact-info-card h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: var(--space-xs);
-}
-
-.contact-info-card p {
-  color: var(--color-gray);
-}
 
 /* ===========================
    About — Mission Layout
@@ -869,8 +869,8 @@ ul {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .contact-grid {
-    grid-template-columns: 3fr 2fr;
+  .contact-bar-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .mission-grid {
